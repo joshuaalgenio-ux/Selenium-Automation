@@ -18,8 +18,8 @@ namespace SeleniumAutomation
         [Test]
         public void ExampleTest()
         {
-            driver.Navigate().GoToUrl("https://example.com");
-            Assert.AreEqual("Example", driver.Title);
+            driver.Navigate().GoToUrl("https://facebook.com");
+            Assert.That(driver.Title, Is.EqualTo("Facebook"));
             Console.WriteLine("Test Passed - Title matched");
         }
 
