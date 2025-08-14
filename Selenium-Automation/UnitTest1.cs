@@ -17,9 +17,9 @@ namespace SeleniumAutomation
         [Test]
         public void ExampleTest()
         {
-            driver.Navigate().GoToUrl("https://facebook.com");
-            Assert.IsTrue(driver.Url.Contains("facebook"));
-            Assert.That(driver.Title, Is.EqualTo("Facebook"));
+            driver.Navigate().GoToUrl("https://youtube.com");
+            Assert.IsTrue(driver.Url.Contains("youtube"));
+            Assert.That(driver.Title, Is.EqualTo("Youtube"));
             Console.WriteLine("Test Passed - Title matched");
         }
 
