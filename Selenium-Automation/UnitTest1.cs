@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
 
 namespace SeleniumAutomation
 {
@@ -19,6 +18,7 @@ namespace SeleniumAutomation
         public void ExampleTest()
         {
             driver.Navigate().GoToUrl("https://facebook.com");
+            Assert.IsTrue(driver.Url.Contains("facebook"));
             Assert.That(driver.Title, Is.EqualTo("Facebook"));
             Console.WriteLine("Test Passed - Title matched");
         }
